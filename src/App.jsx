@@ -1,5 +1,6 @@
-import './App.css'
-<EmpleadoList></EmpleadoList>
+import EmpleadoList from "./components/EmpleadoList";
+import { Container } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const empleados = [
@@ -14,7 +15,9 @@ function App() {
     { id: 9, fullName: "Bernard Jung", title: "DevOps Engineer", department: "Engineering", pic: "empleado09.png" },
   ]
   return (
-    <EmpleadoList empleados={empleados}></EmpleadoList>
+    <Container className="my-5">
+      <EmpleadoList empleados={empleados}></EmpleadoList>
+    </Container>
   )
 }
 
