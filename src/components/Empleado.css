@@ -1,0 +1,13 @@
+.empleado {
+  width: 10%;
+}
+@media (max-width: 992px) {
+  .empleado {
+    width: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .empleado {
+    width: 25%;
+  }
+}
