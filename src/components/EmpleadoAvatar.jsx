@@ -1,10 +1,8 @@
 import React from 'react';
 
-const EmpleadoAvatar = () => {
+const EmpleadoAvatar = ({img}) => {
     return (
-        <div>
-            
-        </div>
+        <img src={img} alt="foto perfil" className='w-25'/>
     );
 };
 
